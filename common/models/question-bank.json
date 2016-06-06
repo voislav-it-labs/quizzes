@@ -1,0 +1,25 @@
+{
+  "name": "questionBank",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "courseId": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "questions": {
+      "type": "hasMany",
+      "model": "question",
+      "foreignKey": "courseId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "answer",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "answer": {
+      "type": "string",
+      "required": true
+    },
+    "correct": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "id": {
+      "type": "string",
+      "required": true,
+      "defaultFn": "uuid"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

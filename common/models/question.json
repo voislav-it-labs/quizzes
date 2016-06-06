@@ -1,0 +1,39 @@
+{
+  "name": "question",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "defaultFn": "uuid"
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answers": {
+      "type": [
+        "answer"
+      ],
+      "required": true
+    },
+    "courseId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "questionBank": {
+      "type": "belongsTo",
+      "model": "questionBank",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

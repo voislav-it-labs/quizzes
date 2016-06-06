@@ -1,0 +1,16 @@
+{
+  "memoryDs": {
+    "name": "memoryDs",
+    "connector": "memory"
+  },
+  "mongodbDs": {
+    "host": "ds025263.mlab.com",
+    "port": 25263,
+    "url": "mongodb://quiz-user:quiz-user@ds025263.mlab.com:25263/quiz",
+    "database": "quiz",
+    "password": "quiz-user",
+    "name": "mongodbDs",
+    "user": "quiz-user",
+    "connector": "mongodb"
+  }
+}

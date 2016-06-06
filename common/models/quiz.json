@@ -1,0 +1,39 @@
+{
+  "name": "quiz",
+  "plural": "quizzes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "locked": {
+      "type": "boolean",
+      "default": false
+    },
+    "questions": {
+      "type": [
+        "question"
+      ],
+      "required": true
+    },
+    "courseId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "questionBank": {
+      "type": "belongsTo",
+      "model": "questionBank",
+      "foreignKey": "courseId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

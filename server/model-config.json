@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "quiz": {
+    "dataSource": "mongodbDs",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "answer": {
+    "dataSource": "mongodbDs",
+    "public": false
+  },
+  "question": {
+    "dataSource": "mongodbDs",
+    "public": true
+  },
+  "questionBank": {
+    "dataSource": "mongodbDs",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}
